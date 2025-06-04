@@ -1,0 +1,23 @@
+{
+  "name": "svgtopng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11",
+    "convert-svg-to-png": "^0.6.4",
+    "express": "^5.1.0"
+  },
+  "npm": {
+    "overrides": {
+      "cheerio": "1.0.0-rc.11"
+    }
+  }
+}
