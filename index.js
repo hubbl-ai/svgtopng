@@ -27,6 +27,7 @@ app.post('/convert/:width/:height', async (req, res) => {
     res.set('Content-Type', 'image/png');
     res.send(png);
   } catch (err) {
+    console.log(err);
     res.status(500).send('Conversion failed', err);
   }
 });
