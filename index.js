@@ -1,6 +1,7 @@
 const { convert } = require('convert-svg-to-png');
 const express = require('express');
 
+const port = process.env.PORT || 3000 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
@@ -30,4 +31,4 @@ app.post('/convert/:width/:height', async (req, res) => {
   }
 });
 
-app.listen(3000);
+app.listen(port);
