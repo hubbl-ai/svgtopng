@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: svgtopng
+    ports:
+      - "3000:3000"
