@@ -2,5 +2,6 @@ services:
   app:
     build: .
     container_name: svgtopng
+    platform: linux/amd64
     ports:
       - "3000:3000"

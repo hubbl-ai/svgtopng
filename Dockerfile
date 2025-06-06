@@ -1,7 +1,7 @@
-FROM node:24
+FROM node:24-bullseye
 
 # Install git to clone the repo
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git chromium 
 
 # Clone the repo
 RUN git clone https://github.com/hubbl-ai/svgtopng /app
